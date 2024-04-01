@@ -1,0 +1,136 @@
+{
+    "sections": {
+      "main": {
+        "type": "page",
+        "disabled": true,
+        "custom_css": [
+          "h2 {font-size: 50px;}"
+        ],
+        "settings": {
+        }
+      },
+      "static_announcement_campaign_aiWhYR": {
+        "type": "static-announcement-campaign",
+        "settings": {
+        }
+      },
+      "abm_industry_landing_page_header_TkWaXB": {
+        "type": "abm-industry-landing-page-header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/Liftow-TMH-logo_400x125_fb706a0d-e2ba-4618-9674-9202cb1e55ed.png",
+          "logo-alt-text": "Liftow Logo",
+          "heading": "Unmatched service and reliability for your warehouse operations",
+          "subheading": "Liftow understands the evolving demands of the warehouse industry. Our partnership with Toyota offers integrated material handling solutions. From forklifts to robotics we’re here to meet all of your challenges and performance goals.",
+          "bg-img": "shopify:\/\/shop_images\/bg-img-placeholder-02.jpg"
+        }
+      },
+      "abm_landing_page_form_hL7yLB": {
+        "type": "abm-landing-page-form",
+        "settings": {
+          "form-heading": "Contact a specialist",
+          "h2-heading": "Make the shift to Liftow and elevate your warehousing potential",
+          "strength-icon-01": "shopify:\/\/shop_images\/icon_Lasting-Legacy.png",
+          "strength-icon-01-alt-text": "Liftow's Rapid Response",
+          "h3-heading-01": "Rapid Response",
+          "h3-subheading-01": "Our dedicated team ensures rapid response to your needs, keeping your operations running smoothly.",
+          "strength-icon-02": "shopify:\/\/shop_images\/icon_Lasting-Legacy.png",
+          "strength-icon-02-alt-text": "Liftow's Reliability",
+          "h3-heading-02": "Reliability",
+          "h3-subheading-02": "We’ve redefined reliability with our Toyota Forklifts, designed to minimize downtime and maximize productivity.",
+          "strength-icon-03": "shopify:\/\/shop_images\/icon_Lasting-Legacy.png",
+          "strength-icon-03-alt-text": "Liftow's Innovation",
+          "h3-heading-03": "Innovation",
+          "h3-subheading-03": "Our Toyota industry-leading forklifts are equipped with the latest technology solutions to meet your warehousing needs."
+        }
+      },
+      "abm_industry_landing_page_testimonial_3FqtWm": {
+        "type": "abm-industry-landing-page-testimonial",
+        "settings": {
+          "testimonial-01-img": "shopify:\/\/shop_images\/testimonial-avatar-placeholder-01.jpg",
+          "testimonial-01-img-alt-text": "",
+          "testimonial-01": "\"We transitioned to Toyota Forklifts through Liftow and haven't looked back. The efficiency and reliability have transformed our operations.\"",
+          "testimonial-01-attribute": "- Warehouse Manager Wayne at a CR customer facility"
+        }
+      },
+      "abm_industry_landing_page_brand_pillars_NG7aYk": {
+        "type": "abm-industry-landing-page-brand-pillars",
+        "settings": {
+          "h2-heading": "Liftow is a proven partner that you can trust",
+          "pillar-icon-01": "shopify:\/\/shop_images\/icon_Premiere-Products.png",
+          "pillar-icon-01-alt-text": "Liftow's Premier Products",
+          "h3-heading-01": "Premier Products",
+          "h3-subheading-01": "By partnering with Toyota, we are Canada’s leading forklift provider proven by decades of excellence. We are Canada's largest trusted Toyota Forklift dealer.",
+          "pillar-icon-02": "shopify:\/\/shop_images\/icon_Trusted-Expertise.png",
+          "pillar-icon-02-alt-text": "Liftow's Trusted Expertise",
+          "h3-heading-02": "Trusted Expertise",
+          "h3-subheading-02": "Since 1960, our clients continue to partner and rely on us for our industry-leading product knowledge, quick response times, innovative technology and high-quality service.",
+          "pillar-icon-03": "shopify:\/\/shop_images\/icon_Lasting-Legacy.png",
+          "pillar-icon-03-alt-text": "Liftow's Lasting Legacy",
+          "h3-heading-03": "Lasting Legacy",
+          "h3-subheading-03": "We have built a reputation as one of Canada’s material handling leaders by successfully working with some of the industry’s most complicated businesses since 1960.",
+          "pillar-icon-04": "shopify:\/\/shop_images\/icon_Exceptional-Service.png",
+          "pillar-icon-04-alt-text": "Liftow's Exceptional Service",
+          "h3-heading-04": "Exceptional Service",
+          "h3-subheading-04": "Our top-notch products, parts and technical expertise empower us with the ability to provide a comprehensive service experience from the ground up for clients."
+        }
+      },
+      "abm_landing_page_cta_secondary_QgzMyf": {
+        "type": "abm-landing-page-cta-secondary",
+        "settings": {
+          "h2-heading": "Ready to partner with Liftow?",
+          "p-text": "Experience the Toyota Difference with Liftow and transform your warehousing operations today. Liftow understands your challenges and is committed to working together.  Select the perfect Toyota forklifts for your warehouse solution needs, backed by our unparalleled service and support.",
+          "btn-cta": "Contact a specialist",
+          "btn-cta-link": "#form-contact",
+          "img-section": "shopify:\/\/shop_images\/bg-img-placeholder-03.jpg",
+          "img-alt-text": "Liftow material handling solutions"
+        }
+      },
+      "abm_landing_page_contact_trYUKP": {
+        "type": "abm-landing-page-contact",
+        "custom_css": [
+  
+        ],
+        "settings": {
+          "h2-heading": "Find a branch near you",
+          "p-text": "We have 16 branches across Southern Ontario, Quebec and the Maritimes.",
+          "btn-01": "Find a location",
+          "btn-01-link": "https:\/\/liftow-safety-products.myshopify.com\/pages\/store-locator",
+          "btn-02": "Contact us",
+          "btn-02-link": "https:\/\/liftow-safety-products.myshopify.com\/pages\/contact-liftow-limited",
+          "img-bg": "shopify:\/\/shop_images\/maps_PNG.png"
+        }
+      },
+      "abm_landing_page_footer_e39aHq": {
+        "type": "abm-landing-page-footer",
+        "settings": {
+          "logo-footer": "shopify:\/\/shop_images\/logo_1-_1.png",
+          "logo-footer-link": "https:\/\/liftow.com\/",
+          "logo-alt-text": "Liftow logo",
+          "legal-info": "Copyright © 2024 Liftow Toyota Forklift Dealer & Lift Truck Training.",
+          "logo-social-01": "shopify:\/\/shop_images\/linkedin-in.svg",
+          "logo-social-01-link": "https:\/\/www.linkedin.com\/company\/1393031",
+          "logo-social-01-alt-text": "Liftow on LinkedIn",
+          "logo-social-02": "shopify:\/\/shop_images\/x-twitter.svg",
+          "logo-social-02-link": "https:\/\/twitter.com\/liftow",
+          "logo-social-02-alt-text": "Liftow on X \/ Twitter",
+          "logo-social-03": "shopify:\/\/shop_images\/instagram.svg",
+          "logo-social-03-link": "https:\/\/www.instagram.com\/liftow\/",
+          "logo-social-03-alt-text": "Liftow on Instagram",
+          "logo-social-04": "shopify:\/\/shop_images\/facebook-f.svg",
+          "logo-social-04-link": "https:\/\/www.facebook.com\/Liftow",
+          "logo-social-04-alt-text": "Liftow on Facebook"
+        }
+      }
+    },
+    "order": [
+      "main",
+      "static_announcement_campaign_aiWhYR",
+      "abm_industry_landing_page_header_TkWaXB",
+      "abm_landing_page_form_hL7yLB",
+      "abm_industry_landing_page_testimonial_3FqtWm",
+      "abm_industry_landing_page_brand_pillars_NG7aYk",
+      "abm_landing_page_cta_secondary_QgzMyf",
+      "abm_landing_page_contact_trYUKP",
+      "abm_landing_page_footer_e39aHq"
+    ]
+  }

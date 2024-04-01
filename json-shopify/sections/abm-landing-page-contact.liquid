@@ -1,0 +1,81 @@
+<!-- 03 | Contact | START -->
+<section class="contact | section-spacer section-container-black">
+
+    <div class="contact-content-main-container | content-container">
+        <div class="contact-content-container">
+            <h2>{{ section.settings.h2-heading }}</h2>
+            <p>{{ section.settings.p-text }}</p>
+        </div>
+        <div class="btn-container">
+            <a href="{{ section.settings.btn-01-link }}">
+                <button class="abm-template secondary">{{ section.settings.btn-01 }}</button>
+            </a>
+            <a href="{{ section.settings.btn-02-link }}">
+                <button class="abm-template secondary">{{ section.settings.btn-02 }}</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Background img + clr overlay -->
+    <div class="clr-fill"></div>
+    <img src="{{ section.settings.img-bg | image_url: width: '1600' }}" alt="" class="bg-img-hero">
+
+</section>
+<!-- 03 | Contact | END -->
+
+
+{{ 'abm-landing-page-template.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+  {
+    "name": "Contact",
+    "settings": [
+      {
+        "type": "text",
+        "id": "h2-heading",
+        "label": "h2 heading",
+        "default": "Lorem ipsum salat dolor ipsum dos quito"
+      },
+      {
+        "type": "text",
+        "id": "p-text",
+        "label": "Supporting text",
+        "default": "At vero eos et accusamus et iusto odio dignissimos ducimus"
+      },
+      {
+        "type": "text",
+        "id": "btn-01",
+        "label": "Button 01 text",
+        "default": "Lorem ipsum"
+      },
+      {
+        "type": "text",
+        "id": "btn-01-link",
+        "label": "Button 01 link",
+        "default": "link URL"
+      },
+      {
+        "type": "text",
+        "id": "btn-02",
+        "label": "Button 02 text",
+        "default": "Lorem ipsum"
+      },
+      {
+        "type": "text",
+        "id": "btn-02-link",
+        "label": "Button 02 link",
+        "default": "link URL"
+      },
+      {
+        "type": "image_picker",
+        "id": "img-bg",
+        "label": "Background image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "ABM LP Contact"
+      }
+    ]
+  }
+{% endschema %}

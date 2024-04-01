@@ -1,0 +1,75 @@
+{% comment %} <div class="test">test</div> {% endcomment %}
+
+<!-- 01a | Hero | START -->
+        
+  <!-- Language switcher placeholder -->
+  <section></section>
+
+  <!-- Header -->
+  <section class="header-container | section-spacer section-container-black">
+
+      <div class="img-container">
+          <img src="{{ section.settings.logo | image_url: width: '500' }}" alt="{{ section.settings.logo-alt-text }}" class="liftow-logo | img-full-width">
+      </div>
+
+      <div class="content-container">
+
+          <div class="header-content-container">
+              <h1 class="hero-main-copy">{{ section.settings.heading }}</h1>
+              <p class="hero-supporting-copy">{{ section.settings.subheading }}</p>
+              <!-- Button CTA | Hide on desktop | MOBILE VIEW ONLY -->
+              <!-- <button class="abm-template primary">Contact a specialist</button> -->
+          </div>
+
+      </div>
+
+      <!-- Background img + clr overlay -->
+      <div class="clr-fill"></div>
+      <img src="{{ section.settings.bg-img | image_url: width: '2500'  }}" alt="" class="bg-img-hero">
+
+  </section>
+
+<!-- 01b | Hero | END -->
+
+
+{{ 'abm-landing-page-template.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+  {
+    "name": "Hero Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
+      },
+      {
+        "type": "text",
+        "id": "logo-alt-text",
+        "label": "Logo alt text"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "heading",
+        "default": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+      },
+      {
+        "type": "text",
+        "id": "subheading",
+        "label": "subheading",
+        "default": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. "
+      },
+      {
+        "type": "image_picker",
+        "id": "bg-img",
+        "label": "Background image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "ABM LP Hero"
+      }
+    ]
+  }
+{% endschema %}

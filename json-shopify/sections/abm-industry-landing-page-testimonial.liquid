@@ -1,0 +1,57 @@
+<!-- 01c | State Case | Social Proof | START -->
+<section class="testimonials | section-spacer section-container-gray-200">
+
+    <div class="testimonial-content-container | content-container">
+        <div class="img-container">
+            <img src="{{ section.settings.testimonial-01-img | image_url: width: '800' }}" alt="{{ section.settings.testimonial-01-img-alt-text }}">
+        </div>
+        <div class="testimonial-contents">
+            <h3 class="testimonial-quote">{{ section.settings.testimonial-01 }}</h3>
+            <p class="testimonial-quote-attribute">{{ section.settings.testimonial-01-attribute }}</p>
+        </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <!-- <div class="testimonial-nav | content-container"> [ ] </div> -->
+
+</section>
+<!-- 01c | State Case | Social Proof | END -->
+
+    
+{{ 'abm-landing-page-template.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+  {
+    "name": "Testimonials Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "testimonial-01-img",
+        "label": "Testimonial 01 photo"
+      },
+      {
+        "type": "text",
+        "id": "testimonial-01-img-alt-text",
+        "label": "Testimonial 01 alt text"
+      },
+      {
+        "type": "text",
+        "id": "testimonial-01",
+        "label": "Testimonial 01",
+        "default": "Lorem ipsum salat dolor ipsum ut perspiciatis unde omnis iste natus error sit voluptatem accusantium."
+      },
+      {
+        "type": "text",
+        "id": "testimonial-01-attribute",
+        "label": "Testimonial 01 attrubute",
+        "default": "- Lorem ipsum salat dolor ipsum ut."
+      }
+    ],
+    "presets": [
+      {
+        "name": "ABM LP testimonials"
+      }
+    ]
+  }
+{% endschema %}

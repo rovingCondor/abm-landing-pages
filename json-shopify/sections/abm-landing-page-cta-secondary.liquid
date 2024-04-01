@@ -1,0 +1,70 @@
+<!-- 02 | Action | 2nd Attempt | START -->
+    <section class="cta-attempt-02 | section-spacer section-container-orange">
+
+        <div class="main-container | content-container">
+            <div class="img-container">
+                <img src="{{ section.settings.img-section | image_url: width: '1600' }}" alt="{{ section.settings.img-alt-text }}" class="img-full-width">
+            </div>
+            <div class="cta-attempt-02-content-container">
+                <div class="cta-attempt-02-content">
+                    <h2>{{ section.settings.h2-heading }}</h2>
+                    <p class="cta-attempt-02-supporting-text">{{ section.settings.p-text }}</p>
+                    <a href="{{ section.settings.btn-cta-link }}">
+                        <button class="abm-template orange-bg">{{ section.settings.btn-cta }}</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 02 | Action | 2nd Attempt | END -->
+
+
+    {{ 'abm-landing-page-template.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+  {
+    "name": "CTA Secondary",
+    "settings": [
+      {
+        "type": "text",
+        "id": "h2-heading",
+        "label": "h2 heading",
+        "default": "Lorem ipsum salat dolor ipsum dos quito"
+      },
+      {
+        "type": "text",
+        "id": "p-text",
+        "label": "Supporting text",
+        "default": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident"
+      },
+      {
+        "type": "text",
+        "id": "btn-cta",
+        "label": "Button text",
+        "default": "Contact a specialist"
+      },
+      {
+        "type": "text",
+        "id": "btn-cta-link",
+        "label": "Button link",
+        "default": "link URL"
+      },
+      {
+        "type": "image_picker",
+        "id": "img-section",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "img-alt-text",
+        "label": "Image alt text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "ABM LP CTA Secondary"
+      }
+    ]
+  }
+{% endschema %}

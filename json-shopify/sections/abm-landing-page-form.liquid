@@ -1,0 +1,144 @@
+<!-- 01b | State Case | Supporting Copy | START -->
+    <section id="form-contact" class="state-case-01b-container | section-spacer section-container-white">
+
+        <div class="state-case-01b-content-container | content-container">
+
+            <!-- Left side on desktop | Bottom on mobile -->
+            <div class="state-case-01b">
+                <h2 class="state-case-heading">{{ section.settings.h2-heading }}</h2>
+                <div class="state-case-highlights-container">
+                    <div class="state-case-highlight">
+                        <img src="{{ section.settings.strength-icon-01 | image_url: width: '500' }}" alt="{{ section.settings.strength-icon-01-alt-text }}">
+                        <div class="state-case-content">
+                            <h3 class="state-case-heading">{{ section.settings.h3-heading-01 }}</h3>
+                            <p class="state-case-supporting-text">{{ section.settings.h3-subheading-01 }}</p>
+                        </div>
+                    </div>
+                    <div class="state-case-highlight">
+                        <img src="{{ section.settings.strength-icon-02 | image_url: width: '500' }}" alt="{{ section.settings.strength-icon-02-alt-text }}">
+                        <div class="state-case-content">
+                            <h3 class="state-case-heading">Reliability</h3>
+                            <p class="state-case-supporting-text">We’ve redefined reliability with our Toyota Forklifts, designed to minimize downtime and maximize productivity.</p>
+                        </div>
+                    </div>
+                    <div class="state-case-highlight">
+                        <img src="{{ section.settings.strength-icon-03 | image_url: width: '500' }}" alt="{{ section.settings.strength-icon-03-alt-text }}">
+                        <div class="state-case-content">
+                            <h3 class="state-case-heading">Innovation</h3>
+                            <p class="state-case-supporting-text">Our Toyota industry-leading forklifts are equipped with the latest technology solutions to meet your warehousing needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right side on desktop | Top on mobile -->
+            <div class="action-contact-form">
+                <h2>{{ section.settings.form-heading }}</h2>
+                <div class="form">              
+                    <!-- Form  -->
+                    {% render 'j-contact-popup' %}
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- 01b | State Case | Supporting Copy | END -->
+
+    <script>
+      const formPostalCodeContainer = document.querySelector(#PostalCode);
+      console.log(formPostalCodeContainer);
+      console.log("testing JS");
+    </script>
+
+{{ 'abm-landing-page-template.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+  {
+    "name": "Brand strengths & form",
+    "settings": [
+      {
+        "type": "text",
+        "id": "form-heading",
+        "label": "form heading",
+        "default": "Contact a specialist"
+      },
+      {
+        "type": "text",
+        "id": "h2-heading",
+        "label": "h2 heading",
+        "default": "Lorem ipsum salat dolor ipsum dos quito"
+      },
+      {
+        "type": "image_picker",
+        "id": "strength-icon-01",
+        "label": "Strength pillar icon 01"
+      },
+      {
+        "type": "text",
+        "id": "strength-icon-01-alt-text",
+        "label": "Logo alt text"
+      },
+      {
+        "type": "text",
+        "id": "h3-heading-01",
+        "label": "h3 heading-01",
+        "default": "Lorem ipsum salat dolor ipsum"
+      },
+      {
+        "type": "text",
+        "id": "h3-subheading-01",
+        "label": "h3 subheading-01",
+        "default": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+      },
+      {
+        "type": "image_picker",
+        "id": "strength-icon-02",
+        "label": "Strength pillar icon 02"
+      },
+      {
+        "type": "text",
+        "id": "strength-icon-02-alt-text",
+        "label": "Logo alt text"
+      },
+      {
+        "type": "text",
+        "id": "h3-heading-02",
+        "label": "h3 heading-02",
+        "default": "Lorem ipsum salat dolor ipsum"
+      },
+      {
+        "type": "text",
+        "id": "h3-subheading-02",
+        "label": "h3 subheading-02",
+        "default": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+      },
+      {
+        "type": "image_picker",
+        "id": "strength-icon-03",
+        "label": "Strength pillar icon 03"
+      },
+      {
+        "type": "text",
+        "id": "strength-icon-03-alt-text",
+        "label": "Logo alt text"
+      },
+      {
+        "type": "text",
+        "id": "h3-heading-03",
+        "label": "h3 heading-03",
+        "default": "Lorem ipsum salat dolor ipsum"
+      },
+      {
+        "type": "text",
+        "id": "h3-subheading-03",
+        "label": "h3 subheading-03",
+        "default": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+      }
+    ],
+    "presets": [
+      {
+        "name": "ABM LP Strengths & form"
+      }
+    ]
+  }
+{% endschema %}

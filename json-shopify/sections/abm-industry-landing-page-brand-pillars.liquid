@@ -1,0 +1,151 @@
+<!-- 01d | State Case | Additional Proof | START -->
+    <section class="brand-pillars | section-spacer section-container-white">
+
+        <div class="brand-pillars-content-container | content-container">
+
+            <div class="brand-pillar-item">
+                <img src="{{ section.settings.pillar-icon-01 | image_url: width: '500' }}" alt="{{ section.settings.pillar-icon-01-alt-text }}">
+                <div class="brand-pillar-content">
+                    <h3 class="brand-pillar-heading">{{ section.settings.h3-heading-01 }}</h3>
+                    <p class="brand-pillar-supporting-text">{{ section.settings.h3-subheading-01 }}</p>
+                </div>
+            </div>
+
+            <div class="brand-pillar-item">
+                <img src="{{ section.settings.pillar-icon-02 | image_url: width: '500' }}" alt="{{ section.settings.pillar-icon-02-alt-text }}">
+                <div class="brand-pillar-content">
+                    <h3 class="brand-pillar-heading">{{ section.settings.h3-heading-02 }}</h3>
+                    <p class="brand-pillar-supporting-text">{{ section.settings.h3-subheading-02 }}</p>
+                </div>
+            </div>
+
+            <div class="brand-pillar-item">
+                <img src="{{ section.settings.pillar-icon-03 | image_url: width: '500' }}" alt="{{ section.settings.pillar-icon-03-alt-text }}">
+                <div class="brand-pillar-content">
+                    <h3 class="brand-pillar-heading">{{ section.settings.h3-heading-03 }}</h3>
+                    <p class="brand-pillar-supporting-text">{{ section.settings.h3-subheading-03 }}</p>
+                </div>
+            </div>
+
+            <div class="brand-pillar-item">
+                <img src="{{ section.settings.pillar-icon-04 | image_url: width: '500' }}" alt="{{ section.settings.pillar-icon-04-alt-text }}">
+                <div class="brand-pillar-content">
+                    <h3 class="brand-pillar-heading">{{ section.settings.h3-heading-04 }}</h3>
+                    <p class="brand-pillar-supporting-text">{{ section.settings.h3-subheading-04 }}</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- 01d | State Case | Additinal Proof | END -->
+
+
+{{ 'abm-landing-page-template.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+  {
+    "name": "Brand Pillars",
+    "settings": [
+      {
+        "type": "text",
+        "id": "h2-heading",
+        "label": "h2 heading",
+        "default": "Lorem ipsum salat dolor ipsum dos quito"
+      },
+      {
+        "type": "image_picker",
+        "id": "pillar-icon-01",
+        "label": "Pillar icon 01"
+      },
+      {
+        "type": "text",
+        "id": "pillar-icon-01-alt-text",
+        "label": "Logo alt text"
+      },
+      {
+        "type": "text",
+        "id": "h3-heading-01",
+        "label": "h3 heading-01",
+        "default": "Lorem ipsum salat dolor ipsum"
+      },
+      {
+        "type": "text",
+        "id": "h3-subheading-01",
+        "label": "h3 subheading-01",
+        "default": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+      },
+      {
+        "type": "image_picker",
+        "id": "pillar-icon-02",
+        "label": "Pillar icon 02"
+      },
+      {
+        "type": "text",
+        "id": "pillar-icon-02-alt-text",
+        "label": "Logo alt text"
+      },
+      {
+        "type": "text",
+        "id": "h3-heading-02",
+        "label": "h3 heading-02",
+        "default": "Lorem ipsum salat dolor ipsum"
+      },
+      {
+        "type": "text",
+        "id": "h3-subheading-02",
+        "label": "h3 subheading-02",
+        "default": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+      },
+      {
+        "type": "image_picker",
+        "id": "pillar-icon-03",
+        "label": "Pillar icon 03"
+      },
+      {
+        "type": "text",
+        "id": "pillar-icon-03-alt-text",
+        "label": "Logo alt text"
+      },
+      {
+        "type": "text",
+        "id": "h3-heading-03",
+        "label": "h3 heading-03",
+        "default": "Lorem ipsum salat dolor ipsum"
+      },
+      {
+        "type": "text",
+        "id": "h3-subheading-03",
+        "label": "h3 subheading-03",
+        "default": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+      },
+      {
+        "type": "image_picker",
+        "id": "pillar-icon-04",
+        "label": "Pillar icon 04"
+      },
+      {
+        "type": "text",
+        "id": "pillar-icon-04-alt-text",
+        "label": "Logo alt text"
+      },
+      {
+        "type": "text",
+        "id": "h3-heading-04",
+        "label": "h3 heading-04",
+        "default": "Lorem ipsum salat dolor ipsum"
+      },
+      {
+        "type": "text",
+        "id": "h3-subheading-04",
+        "label": "h3 subheading-04",
+        "default": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+      }
+    ],
+    "presets": [
+      {
+        "name": "ABM LP Brand Pillars"
+      }
+    ]
+  }
+{% endschema %}

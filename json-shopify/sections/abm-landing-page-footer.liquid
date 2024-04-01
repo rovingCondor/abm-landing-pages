@@ -1,0 +1,129 @@
+<!-- 04 | Footer | Condensed | START -->
+    <section class="footer-abm-landing-page | section-container-footer">
+
+        <div class="content-container-footer">
+
+            <div class="footer-content-top">
+                <a href="{{ section.settings.logo-footer-link }}" target="_blank">
+                    <img src="{{ section.settings.logo-footer | image_url: width: '600' }}" alt="{{ section.settings.logo-alt-text }}" class="liftow-logo">
+                </a>
+                <div class="social-icon-container">
+                    <a href="{{ section.settings.logo-social-01-link }}" target="_blank">
+                        <img src="{{ section.settings.logo-social-01 | image_url: width: '200' }}" alt="{{ section.settings.logo-social-01-alt-text }}">
+                    <a href="{{ section.settings.logo-social-02-link }}" target="_blank">
+                        <img src="{{ section.settings.logo-social-02 | image_url: width: '200' }}" alt="{{ section.settings.logo-social-02-alt-text }}">
+                    </a>
+                    <a href="{{ section.settings.logo-logo-social-03-link }}" target="_blank">
+                        <img src="{{ section.settings.logo-social-03 | image_url: width: '200' }}" alt="{{ section.settings.logo-social-03-alt-text }}">
+                    </a>
+                    <a href="{{ section.settings.logo-social-04-link }}" target="_blank">
+                        <img src="{{ section.settings.logo-social-04 | image_url: width: '200' }}" alt="{{ section.settings.logo-social-04-alt-text }}">
+                    </a>
+                </div>
+            </div>
+
+            <small class="liftow-legal">{{ section.settings.legal-info }}</small>
+
+        </div>
+
+        <p>{{ section.settings.richtext-test }}</p>
+
+    </section>
+    <!-- 04 | Footer | Condensed | END -->
+
+
+{{ 'abm-landing-page-template.css' | asset_url | stylesheet_tag }}
+
+{% schema %}
+  {
+    "name": "Footer",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo-footer",
+        "label": "Logo"
+      },
+      {
+        "type": "text",
+        "id": "logo-footer-link",
+        "label": "Logo URL"
+      },
+      {
+        "type": "text",
+        "id": "logo-alt-text",
+        "label": "Logo alt text"
+      },
+      {
+        "type": "text",
+        "id": "legal-info",
+        "label": "Legal information",
+        "default": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo-social-01",
+        "label": "Social Icon-01"
+      },
+      {
+        "type": "text",
+        "id": "logo-social-01-link",
+        "label": "Social logo 01 URL"
+      },
+      {
+        "type": "text",
+        "id": "logo-social-01-alt-text",
+        "label": "Social logo 01 alt text"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo-social-02",
+        "label": "Social Icon-02"
+      },
+      {
+        "type": "text",
+        "id": "logo-social-02-link",
+        "label": "Social logo 02 URL"
+      },
+      {
+        "type": "text",
+        "id": "logo-social-02-alt-text",
+        "label": "Social logo 02 alt text"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo-social-03",
+        "label": "Social Icon-03"
+      },
+      {
+        "type": "text",
+        "id": "logo-social-03-link",
+        "label": "Social logo 03 URL"
+      },
+      {
+        "type": "text",
+        "id": "logo-social-03-alt-text",
+        "label": "Social logo 03 alt text"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo-social-04",
+        "label": "Social Icon-04"
+      },
+      {
+        "type": "text",
+        "id": "logo-social-04-link",
+        "label": "Social logo 04 URL"
+      },
+      {
+        "type": "text",
+        "id": "logo-social-04-alt-text",
+        "label": "Social logo 04 alt text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "ABM LP Footer"
+      }
+    ]
+  }
+{% endschema %}
