@@ -3,3 +3,679 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* !! Don't include in Shopify CSS | START !! */
+h1, h2, h3, h4, h5, h6, button {
+    font-family: "Montserrat", sans-serif;
+}
+
+p, small {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+form .placeholder {
+    margin: 0 auto;
+}
+
+.form-item {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-item label {
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    font-family: sans-serif;
+    text-align: left;
+    color: #ffffff;
+}
+
+form .form-item input {
+    padding: 0.75rem 0;
+    border: none;
+    border-bottom: 3px solid #666666;
+}
+/* !! Don't include in Shopify CSS | END !! */
+
+
+
+/* Utility Classes | START */
+.section-spacer {
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+.content-container {
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    padding:  0 1rem;
+    width: min(100%, 75rem);
+    text-align: center;
+}
+
+.section-container-black {
+    background-color: #000000;
+    color: #ffffff; 
+}
+
+.section-container-gray-200 {
+    background-color: #EDEDED;
+    color: #000000; 
+}
+
+.section-container-footer {
+    background-color: #F5F3ED;
+    color: #000000; 
+}
+
+.section-container-white {
+    background-color: #ffffff;
+    color: #000000; 
+}
+
+.section-container-orange {
+    background-color: #FF6C0C;
+    color: #000000; 
+}
+
+.img-full-width {
+    width: 100%;
+}
+
+button.abm-template {
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    width: min(100%, 25rem);
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #FF6C0C;
+    transition: all 200ms ease;
+}
+
+button.abm-template:hover {
+    color: #000000;
+    background-color: #fceb00 ;
+}
+
+button.abm-template.orange-bg {
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    width: min(100%, 25rem);
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #000000;
+    transition: all 200ms ease;
+}
+
+button.abm-template.orange-bg:hover {
+    color: #000000;
+    background-color: #fceb00 ;
+}
+
+button.abm-template.secondary {
+    margin-top: 0;
+    width: min(100%, 21rem);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    transition: all 200ms ease;
+}
+
+button.abm-template.secondary:hover {
+    color: #000000;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+}
+/* Utility Classes | END */
+
+
+
+/* MAIN STYLES */
+
+/* Header section | START */
+.header-container {
+    margin: 0;
+    padding: 0 0 4rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-container .content-container {
+    position: relative;
+    z-index: 20;
+}
+
+.header-container .img-container {
+    padding: 0 1rem;
+    position: relative;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container img.liftow-logo  {
+    max-width: 400px;
+}
+
+.header-content-container h1 {
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: 800;
+    line-height: 110%;
+}
+
+.header-content-container p {
+    font-size: 1rem;
+    line-height: 160%
+}
+
+/* .header-content-container button {
+    margin-top: 2rem;
+    color: #ffffff;
+    background-color: #FF6C0C ;
+} */
+
+.header-container .clr-fill {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.85;
+}
+
+.header-container img.bg-img-hero {
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (min-width: 56.25rem) {
+    .header-container img.bg-img-hero {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 75rem) {
+    .header-container .content-container {
+        text-align: left;
+    }
+
+    .header-container .img-container {
+        justify-content: start;
+    }
+
+    .header-content-container h1 {
+        padding-right: 30%;
+        font-size: 2.75rem;
+    }
+    
+    .header-content-container p {
+        padding-right: 50%;
+    }
+
+    .header-content-container button {
+        display: none;
+    }
+}
+/* Header section | END */
+
+
+/* State case section 1b | START */
+.state-case-01b-container {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.state-case-01b-content-container {
+    position: relative;
+    z-index: 100;
+    top: -4rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.state-case-01b h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 110%;
+    color: #77777A;
+}
+
+.state-case-highlight {
+    margin: 0 auto 2rem auto;
+    width: min(100%, 35rem);
+}
+
+.state-case-highlight img {
+    max-width: 90px;
+}
+
+.state-case-content h3 {
+    margin: 0.25rem 0 0.2rem 0;
+    font-size: 1.05rem;
+    font-weight: 800;
+    line-height: 110%;
+    color: #77777A;
+}
+
+.state-case-content p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 130%;
+    color: #77777A;
+}
+
+@media (min-width: 75rem) {
+    .state-case-01b-container {
+        margin-bottom: -10rem;
+    }
+
+    .state-case-highlight {
+        margin: 0 auto 2rem auto;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .state-case-highlight img {
+        max-width: 60px;
+        width: 20%;
+    }
+
+    .state-case-01b h2 {
+        margin-bottom: 2.5rem;
+    }
+
+    .state-case-highlight .state-case-content {
+        width: auto;
+    }
+
+    .state-case-content {
+        text-align: left;
+    }
+}
+
+.action-contact-form {
+    margin: 0 auto 2rem auto;
+    padding: 2rem 2rem;
+    width: min(100%, 700px);
+    border-radius: 0.25rem;
+    background-color: #FF6C0C;
+    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, .2);
+}
+
+.action-contact-form h3 {
+    margin: 1rem 0 2.5rem 0;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 110%;
+    color: #ffffff
+}
+
+.action-contact-form button {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+@media (min-width: 75rem) {
+    .state-case-01b-content-container {
+        top: 0;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .state-case-01b {
+        width: 50%;
+    }
+
+    .action-contact-form {
+        width: 50%;
+        position: relative;
+        top: -10rem;
+    }
+}
+
+/* State case 1b section | END */
+
+
+/* 01c | State Case | Social Proof | START */
+.testimonials {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.testimonial-content-container {
+    width: min(100%, 900px);
+    position: relative;
+    z-index: 100;
+}
+
+.testimonial-content-container .img-container {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.testimonial-content-container .img-container img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.testimonial-contents p.testimonial-quote {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 120%;
+    color: #FF6C0C;
+}
+
+.testimonial-contents p.testimonial-quote-attribute {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 120%;
+    color: #77777A;
+}
+
+.testimonials .clr-fill {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0;
+}
+
+.testimonials img.bg-img-hero {
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.05;
+}
+
+
+@media (min-width: 75rem) {
+    .testimonial-content-container {
+        padding: 0 7rem;
+        width: min(100%, 1200px);
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .testimonial-contents {
+        width: 80%;
+        text-align: left;
+    }
+
+    .testimonials img.bg-img-hero {
+        width: 100%;
+        height: auto;
+    }
+}
+/* 01c | State Case | Social Proof section | END */
+
+
+
+/* 01d | State Case | Additinal Proof| Brand Pillars section | START */
+.brand-pillar-item {
+    margin: 0 auto 2rem auto;
+    width: min(100%, 35rem);
+}
+
+
+.brand-pillar-item img {
+    max-width: 90px;
+}
+
+.brand-pillar-content h3 {
+    margin: 0.25rem 0 0.2rem 0;
+    font-size: 1.05rem;
+    font-weight: 800;
+    line-height: 110%;
+    color: #77777A;
+}
+
+.brand-pillar-content p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 130%;
+    color: #77777A;
+}
+
+
+@media (min-width: 75rem) {
+    .brand-pillars-content-container {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .brand-pillar-item img {
+        max-width: 60px;
+        /* width: 20%; */
+    }
+}
+/* 01d | State Case | Additinal Proof| Brand Pillars section | END */
+
+
+
+/* 02 | Action | 2nd Attempt section | START  */
+.cta-attempt-02 {
+    margin-bottom: 4rem;
+    padding-top: 0;
+}
+
+.cta-attempt-02 .main-container.content-container {
+    padding: 0;
+}
+
+.main-container .img-container {
+    margin-bottom: 2rem;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.main-container .img-container img {
+    height: 100%;
+    width: 120%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cta-attempt-02-content {
+    padding: 0 1rem;
+}
+
+.cta-attempt-02-content h2 {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 110%;
+    color: #ffffff;
+}
+
+.cta-attempt-02-content p {
+    margin-bottom: 2rem;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: #ffffff;
+}
+
+@media (min-width: 75rem) {
+    .cta-attempt-02.section-spacer {
+        padding-bottom: 0;
+    }
+
+    .cta-attempt-02 .main-container {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .main-container .img-container {
+        margin-bottom: 0;
+    }
+
+    .main-container .img-container img {
+        /* height: 100%; */
+        /* width: 120%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); */
+    }
+
+    .cta-attempt-02 .cta-attempt-02-content-container {
+        padding: 4rem 0;
+    }
+
+    .cta-attempt-02-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+}
+/* 02 | Action | 2nd Attempt section | END  */
+
+
+
+/* 03 | Contact section | START */
+.contact {
+    margin-bottom: 0;
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-content-main-container {
+    position: relative;
+    z-index: 100;
+}
+
+.contact h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 110%;
+    color: #ffffff;
+}
+
+.contact p {
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 140%;
+    color: #ffffff;
+}
+
+.contact .btn-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact .clr-fill {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.85;
+}
+
+.contact img.bg-img-hero {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    filter: blur(0.1rem);
+}
+
+@media (min-width: 48rem) {
+    .contact .btn-container {
+        /* margin-top: 2rem; */
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+/* 03 | Contact section | END */
+
+
+
+/* 04 | Footer | Condensed section | START */
+.footer-abm-landing-page .content-container-footer {
+    margin-bottom: 0;
+    padding: 0.5rem 2rem 1rem 2rem;
+    text-align: center;
+}
+
+.footer-content-top img.liftow-logo  {
+    width: 300px;
+}
+
+.social-icon-container {
+    margin-bottom: 3rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-icon-container img {
+    height: 25px;
+}
+
+.liftow-legal {
+    color: #77777A;
+}
+
+@media (min-width: 75rem) {
+    .footer-abm-landing-page .footer-content-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-content-top img.liftow-logo  {
+        width: 400px;
+    }
+
+    .social-icon-container {
+        align-items: center;
+    }
+}
+/* 04 | Footer | Condensed section | END */
